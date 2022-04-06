@@ -15,10 +15,8 @@ let apiData = 'c435402a8fa9cf6f557df3ddcf4b7139';
 
 let weatherData = fetch('https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=' + apiData + '')
 .then(function (response) {
-	// The API call was successful!
 	console.log('success!', response);
 }).catch(function (err) {
-	// There was an error
 	console.warn('Something went wrong.', err);
 });
 
